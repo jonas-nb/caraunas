@@ -24,20 +24,24 @@ const NavBar = () => {
   };
 
   return (
-    <div className="flex items-center justify-around border border-blue-600 w-full">
-      <div className="">
-        <img className="w-11" src={Marca} alt="" />
-      </div>
+    <div className="flex items-center justify-around md:justify-between w-full z-50 bg-[#e8f1f5]">
+      <Link to={"/"} className="">
+        <img className="w-16" src={Marca} alt="" />
+      </Link>
       <div>
         {screenWidth > 640 ? (
-          <div>
-            <Link to="/Destinos">Destinos</Link>
-            <Link to="/Blog">Blog</Link>
+          <div className="w-48 md:w-56 flex justify-between text-2xl md:mr-96 uppercase">
+            <Link class="text-[#1b4965] hover:text-[#1989ac]" to="/Destinos">
+              Destinos
+            </Link>
+            <Link class="text-[#1b4965] hover:text-[#1989ac]" to="/Blog">
+              Blog
+            </Link>
           </div>
         ) : (
           <div>
             <Button onClick={handleClick}>
-              <MenuIcon />
+              <MenuIcon fontSize="large" />
             </Button>
             <Menu
               id="simple-menu"
