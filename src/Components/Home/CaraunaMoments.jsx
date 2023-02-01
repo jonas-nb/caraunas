@@ -1,26 +1,62 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { TbAnchor } from "react-icons/tb";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import img2 from "../../assets/imagensHero/imagen2.jpg";
+import img1 from "../Home/assets/Imagens_Carrousel/img1.jpg";
+import img2 from "../Home/assets/Imagens_Carrousel/img2.jpg";
+import img3 from "../Home/assets/Imagens_Carrousel/img3.jpg";
+import img4 from "../Home/assets/Imagens_Carrousel/img4.jpg";
 import { Link } from "react-router-dom";
+
 const CaraunaMoments = () => {
+  const [currentSlide, setCurrentSlide] = useState(1);
+  const images = [img1, img2, img3, img4];
+  const numSlides = images.length;
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 10000);
+    return () => clearInterval(intervalId);
+  });
+
+  const nextSlide = () => {
+    const next = currentSlide + 1;
+    setCurrentSlide(next > numSlides ? 1 : next);
+  };
+
+  const previousSlide = () => {
+    const prev = currentSlide - 1;
+    setCurrentSlide(prev < 1 ? numSlides : prev);
+  };
+
   return (
-    <div className="border mt-10 w-full flex items-center flex-col">
-      <div className="">
-        <h1 className="text-xl text-start">
-          Conheça a beleza da costa paraibana com a Carauna!
+    <div className="w-full flex items-center flex-col bg-[#1989ac] rounded-b-md text-[#bee9e8] ">
+      <div className="text-center mb-4 mt-5 ">
+        <h1 className="text-2xl font-bold drop-shadow-sm text-[#bee9e8]">
+          Viva as Aventuras na Costa Paraibana com a Carauna!
         </h1>
       </div>
-      <div>
-        <img className="rounded-md" src={img2} alt="" />
+      <div className="relative">
+        <img
+          src={images[currentSlide - 1]}
+          className="w-full transition-all duration-300 ease-in-out transform"
+        />
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <button onClick={previousSlide} className="btn btn-circle">
+            ❮
+          </button>
+          <button onClick={nextSlide} className="btn btn-circle">
+            ❯
+          </button>
+        </div>
       </div>
-      <div>
-        <p>
-          Navegue pelas águas cristalinas da costa paraibana e aproveite
-          momentos inesquecíveis com a Carauna. Reserve agora sua viagem!
+      <div className="text-center mt-4 mb-6">
+        <p className="text-sm text-[#bee9e8] p-1">
+          Navegue pelas águas cristalinas e crie memórias inesquecíveis com a
+          Carauna. Reserve agora sua viagem!
         </p>
-        <Link className="btn flex gap-2">
-          Explore os destinos <HiOutlineExternalLink />
+        <Link className="btn border-none drop-shadow-md mt-4 bg-[#ffde25] text-[#1989ac] px-4 py-2 focus:bg-[#00004f] flex items-center justify-between w-64 m-auto mb-20">
+          Conheça nossos destinos <HiOutlineExternalLink />
         </Link>
       </div>
     </div>
