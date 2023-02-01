@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import NavBar from "./Components/Header/NavBar";
+import Footer from "./Components/Aside/Footer";
+import NavBar from "./Components/Aside/NavBar";
 import IndexHome from "./Components/Home/IndexHome";
 
 const App = () => {
@@ -13,6 +14,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<IndexHome />} />
       </Routes>
+
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };

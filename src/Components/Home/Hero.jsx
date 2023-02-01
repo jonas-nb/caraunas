@@ -11,7 +11,7 @@ const Hero = () => {
         <h2 className="text-center pt-5">
           Venha ter a experiência do melhor passeio de sua vida.
         </h2>
-        <Link className="mt-5 btn bg-[#ffde25] text-[#1b4965]">
+        <Link className="btn border-none drop-shadow-md mt-4 bg-[#ffde25] text-[#1989ac] px-4 py-2 focus:bg-[#00004f] flex items-center w-64 m-auto">
           Conheça os Destinos
         </Link>
       </div>
