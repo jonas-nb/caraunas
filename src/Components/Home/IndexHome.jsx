@@ -1,5 +1,6 @@
 import React from "react";
 import CaraunaMoments from "./CaraunaMoments";
+import Contato from "./Contato";
 import Destaque from "./Destaque";
 import Diferenciais from "./Diferenciais";
 import Hero from "./Hero";
@@ -11,6 +12,7 @@ const IndexHome = () => {
       <CaraunaMoments />
       <Diferenciais />
       <Destaque />
+      <Contato />
     </div>
   );
 };

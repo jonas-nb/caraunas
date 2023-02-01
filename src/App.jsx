@@ -6,7 +6,7 @@ import IndexHome from "./Components/Home/IndexHome";
 const App = () => {
   return (
     <div>
-      <div className="bg-[#f4f8fa] w-[100vw] h-16 flex fixed drop-shadow-md">
+      <div className="bg-[#f4f8fa] w-[100vw] h-16 flex fixed drop-shadow-md z-50">
         <NavBar />
       </div>
 
