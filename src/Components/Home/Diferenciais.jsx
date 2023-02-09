@@ -3,7 +3,7 @@ import { FaCheckCircle, FaClock, FaThumbsUp } from "react-icons/fa";
 
 const Diferenciais = () => {
   return (
-    <div className="relative bottom-1">
+    <div className="">
       <div className="px-6 py-12 bg-[#bee9e8]">
         <h2 className="text-3xl font-bold text-center mb-6">
           Nossos Diferenciais

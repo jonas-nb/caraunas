@@ -3,7 +3,7 @@ import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-6 relative bottom-1">
+    <footer className="bg-gray-900 text-white py-6 h-80">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-around">
           <div className="mb-6 md:mb-0 flex flex-col">
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center mt-10">
-        Carauna Passeios &copy; {new Date().getFullYear()}
+        A Carauna Passeios &copy; {new Date().getFullYear()}
       </div>
     </footer>
   );
