@@ -30,7 +30,10 @@ const NavBar = () => {
       </Link>
       <div>
         {screenWidth > 640 ? (
-          <div className="w-48 md:w-56 flex justify-between text-2xl md:mr-96 uppercase">
+          <div className="w-48 md:w-72 flex justify-between text-2xl md:mr-96 uppercase">
+            <Link class="text-[#1b4965] hover:text-[#1989ac]" to="/">
+              Home
+            </Link>
             <Link class="text-[#1b4965] hover:text-[#1989ac]" to="/Destinos">
               Destinos
             </Link>
@@ -50,6 +53,7 @@ const NavBar = () => {
               open={Boolean(anchorEl)}
               onClose={handleClose}
             >
+              <MenuItem onClick={handleClose}>Home</MenuItem>
               <MenuItem onClick={handleClose}>Destinos</MenuItem>
               <MenuItem onClick={handleClose}>Blog</MenuItem>
               <MenuItem onClick={handleClose}>Sair</MenuItem>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Destaque = () => {
   return (
-    <div className="z-10 relative bottom-1 p-3 bg-[#fff8d3] pb-20">
+    <div className="z-10 relative  p-3 bg-[#fff8d3] pb-20">
       <h1 className="mt-10 text-3xl font-bold text-center mb-6">
         Destaques
         <FaMapMarkedAlt className="m-auto" />

@@ -2,12 +2,12 @@ import React from "react";
 import { AiFillContacts } from "react-icons/ai";
 const Contato = () => {
   return (
-    <div className="bg-[#85e6c6] relative bottom-1">
+    <div className="bg-[#85e6c6] ">
       <h1 className="text-3xl font-bold text-center pt-10 flex flex-col items-center">
         Contato <AiFillContacts />
       </h1>
 
-      <div className="px-6 py-12 ">
+      <div className="px-6 py-12 mt-3 ">
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/3 mb-6 md:mb-0 text-center flex flex-col items-center">
             <i className="fab fa-whatsapp text-green-500 mb-3 fa-3x"></i>
