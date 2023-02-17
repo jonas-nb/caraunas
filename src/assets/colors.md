@@ -5,5 +5,6 @@
 #bee9e8
 #ffde25
 #00004f
+#fff8d3
 #black/40
 #green-500
