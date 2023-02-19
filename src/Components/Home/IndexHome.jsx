@@ -1,20 +1,20 @@
-import React from "react";
-import CaraunaMoments from "./CaraunaMoments";
-import Contato from "./Contato";
-import Destaque from "./Destaque";
-import Diferenciais from "./Diferenciais";
-import Hero from "./Hero";
+import React from 'react'
+import Contato from './Contato'
+import Destaque from './Destaque'
+import Diferenciais from './Diferenciais'
+import Hero from './Hero'
+import SlideContainer from './SlideContainer'
 
 const IndexHome = () => {
-  return (
-    <div>
-      <Hero />
-      <CaraunaMoments />
-      <Diferenciais />
-      <Destaque />
-      <Contato />
-    </div>
-  );
-};
+    return (
+        <div>
+            <Hero />
+            <SlideContainer />
+            <Diferenciais />
+            <Destaque />
+            <Contato />
+        </div>
+    )
+}
 
-export default IndexHome;
+export default IndexHome
