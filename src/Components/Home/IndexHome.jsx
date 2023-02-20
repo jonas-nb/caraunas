@@ -3,13 +3,13 @@ import Contato from './Contato'
 import Destaque from './Destaque'
 import Diferenciais from './Diferenciais'
 import Hero from './Hero'
-import SlideContainer from './SlideContainer'
+import InfoSlider from './Muda Image/InfoSlider'
 
 const IndexHome = () => {
     return (
         <div>
             <Hero />
-            <SlideContainer />
+            <InfoSlider />
             <Diferenciais />
             <Destaque />
             <Contato />

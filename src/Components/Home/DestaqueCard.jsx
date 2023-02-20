@@ -6,7 +6,7 @@ const DestaqueCard = (props) => {
 
     return (
         <div
-            className="w-96 h-56 shadow drop-shadow-md bg-white  flex flex-col justify-start items-center gap-5"
+            className="w-56 h-56 shadow drop-shadow-md bg-white  flex flex-col justify-start items-center gap-5"
             style={{
                 backgroundImage: `url(${imagem})`,
                 backgroundSize: 'cover',
